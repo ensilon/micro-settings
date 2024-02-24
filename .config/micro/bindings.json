@@ -1,7 +1,7 @@
 {
     "Ctrl-q": "None",
     "\u003cCtrl-x\u003e\u003cCtrl-c\u003e": "Quit",
-    "\u003cCtrl-x\u003e\u003cCtrl-w\u003e": "Save",
+    "\u003cCtrl-x\u003e\u003cCtrl-s\u003e": "Save",
     "Alt-,": "PreviousTab",
     "Alt-.": "NextTab",
     "Alt-/": "lua:comment.comment",

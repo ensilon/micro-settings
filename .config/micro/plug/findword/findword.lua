@@ -9,7 +9,7 @@ function findUp(bp)
 		bp:FindPrevious()
     else
         if not util.IsWordChar(util.RuneAt(bp.Buf:LineBytes(bp.Cursor.Y), bp.Cursor.X)) then
-		    bp:Search()
+		    bp:Find()
         end
         bp.Cursor:SelectWord()
         local search = "\\b"..util.String(bp.Cursor:GetSelection()).."\\b"
@@ -24,7 +24,7 @@ function findDown(bp)
 		bp:FindNext()
     else
         if not util.IsWordChar(util.RuneAt(bp.Buf:LineBytes(bp.Cursor.Y), bp.Cursor.X)) then
-            bp:Search()
+            bp:Find()
         end
         bp.Cursor:SelectWord()
         local search = "\\b"..util.String(bp.Cursor:GetSelection()).."\\b"
